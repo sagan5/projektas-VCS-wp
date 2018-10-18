@@ -1,13 +1,10 @@
-<section class="banner">
-	<?php 
+<section class="banner" style="background-image: url(
+	<?php
 		$image = get_field('hb_banner_image');
+		echo $image['sizes']['banner']; 
 	?>
-		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-	<div class="container flex-container">
-		<div class="banner-text">
+	)">
+	<div class="container">
 			<h1><?php the_field('hb_banner_title'); ?></h1>
-		</div>				
 	</div>
 </section>
-
-

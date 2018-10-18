@@ -7,9 +7,9 @@
 			</div>
 			<nav class="soc-nav">
 				<ul class="flex-container">
-					<li><a href="https://facebook.com/groups/1054411517905019/?fref=nf" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="https://reddit.com/r/agameofthroneslcg" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
-					<li><a href="https://www.youtube.com/channel/UCsZzNCKqWflwhjXd-1AqTKQ/videos" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					<?php
+					get_template_part('partials/social_navigation');
+					?>
 				</ul>
 			</nav>
 		</div>

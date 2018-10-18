@@ -37,10 +37,12 @@ function theme_stylesheets(){
 	if( $styles_path ) {
 		// stiliaus registravimas
 		wp_register_style('gfonts', "https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext", array(), false, 'all');
-		wp_register_style('fontawesome', "https://use.fontawesome.com/releases/v5.3.1/css/all.css", array('gfonts'), false, 'all');
+		wp_register_style('fontawesome', ASSETS_URL . '/assets/css/font-awesome.min.css', array('gfonts'), false, 'all');
 		wp_register_style('owlcarousel', ASSETS_URL . '/assets/css/owl.carousel.min.css', array('fontawesome'), false, 'all');
 		wp_register_style('owltheme', ASSETS_URL . '/assets/css/owl.theme.default.min.css', array('owlcarousel'), false, 'all');
 		wp_register_style('style', ASSETS_URL . '/assets/css/style.css', array('owltheme'), false, 'all');
+
+		
 
 		// stiliaus pakrovimas
 		wp_enqueue_style('gfonts');
@@ -172,5 +174,6 @@ function dump($data){
 }
 
 add_image_size('logo', 113, 44, false);
+add_image_size('banner', 1920, 1200, false);
 
 ?>

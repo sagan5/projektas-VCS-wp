@@ -27,9 +27,9 @@
 			</div>
 			<nav class="soc-nav">
 				<ul class="flex-container">
-					<li><a href="https://facebook.com/groups/1054411517905019/?fref=nf" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="https://reddit.com/r/agameofthroneslcg" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
-					<li><a href="https://www.youtube.com/channel/UCsZzNCKqWflwhjXd-1AqTKQ/videos" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					<?php
+					get_template_part('partials/social_navigation');
+					?>
 				</ul>
 			</nav>
 		</div>
@@ -53,17 +53,7 @@
 					];
 
 					wp_nav_menu($args);
-				?>
-				<!--
-					<ul class="nav">
-					<li class="menu-item"><a href="#top">Home</a></li>
-					<li class="menu-item"><a href="#about-game">Game</a></li>
-					<li class="menu-item"><a href="#about-us">About us</a></li>
-					<li class="menu-item"><a href="#how-to-play">Rules</a></li>
-					<li class="menu-item"><a href="#events">Events</a></li>
-					<li class="menu-item"><a href="#get-in-touch">Contact</a></li>
-					</ul> 
-				-->			
+				?>		
 			</nav>
 			<div class="search-box">
 			<form action="/search.php" class="flex-container">

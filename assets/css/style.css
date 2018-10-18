@@ -336,10 +336,8 @@ h2::before {
 *
 */
 .banner {
-/*  background-image: url("../images/daenerys.jpg");
   background-size: cover;
   background-position: center;
-*/  
   height: calc(100vh - 59px - 81px);
   position: relative;
 }
@@ -357,7 +355,7 @@ h2::before {
 
 h1 {
   font: 3.4rem "Game of Thrones", sans-serif;
-  color: red;
+  color: #ffffff;
   line-height: 1.3;
   word-spacing: 10px;
   letter-spacing: 1.5px;
