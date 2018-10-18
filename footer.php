@@ -3,7 +3,7 @@
 	<div class="footer">
 		<div class="container flex-container">
 			<div class="footer-text">
-				<p>This project is for learning purposes only.</p>
+				<p><?php the_field('ct_copyright', 'option'); ?></p>
 			</div>
 			<nav class="soc-nav">
 				<ul class="flex-container">
