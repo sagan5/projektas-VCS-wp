@@ -1,0 +1,40 @@
+/*
+*
+* EVENTS BEGIN
+*
+*/
+
+.events{
+	background-color: $grey;
+}
+
+.event-box{
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	>p{
+		margin: 27px 7px;
+	}
+	.event-description{
+		justify-content: space-between;
+		min-height: 250px;
+		.details{
+			width: 42%;
+			text-align: left;
+			p{
+				border-bottom: 1px solid $lightblue05;
+
+			}
+		}
+		#map{
+			width: 57%;
+		}
+	}
+}
+
+
+/*
+*
+* EVENTS END
+*
+*/

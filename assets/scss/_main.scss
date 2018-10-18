@@ -1,0 +1,145 @@
+/*
+*
+* MAIN BODY START
+*
+*/
+
+// fonts
+@font-face {
+    font-family: 'Game of Thrones';
+    src: url('../fonts/subset-GameofThrones.eot');
+    src: url('../fonts/subset-GameofThrones.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-GameofThrones.woff2') format('woff2'),
+        url('../fonts/subset-GameofThrones.woff') format('woff'),
+        url('../fonts/subset-GameofThrones.ttf') format('truetype'),
+        url('../fonts/subset-GameofThrones.svg#GameofThrones') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+$agot: 'Game of Thrones', sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+
+// colors
+$white: #ffffff;
+$grey: #eeeeee;
+$dgrey: #818181;
+$lgrey: #efefef;
+$black: #252323;
+$lightblue1: rgba(0, 186, 198, 1);
+$lightblue05: rgba(0, 186, 198, .5);
+
+html{
+	font-size: 16px;
+}
+
+section{
+	position: relative;
+}
+
+ul,
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul{
+	list-style: none;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+@mixin headings{
+	letter-spacing: 1px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing: 3px;
+	color: $dgrey;
+}
+
+h2{
+	@include headings;
+	font: 2rem $agot;
+	margin: 0 7px 18px;
+}
+
+h3{
+	@include headings;
+	font: 1.3rem $agot;
+	margin: 20px 0;
+}
+
+h4{
+	font: 1rem $agot;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	color: $dgrey;
+}
+h5{
+	font: 0.8rem $agot;
+	margin: 10px 7px;
+	color: $dgrey;
+}
+
+p{
+	margin: 0 7px;
+	font: 1rem $ptsans;
+	font-weight: 400;
+	line-height: 1.2857;
+	color: $dgrey;
+}
+
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+	padding-top: 45px;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.flex-container{
+	display: flex;
+}
+
+::placeholder{
+    color: $dgrey;
+    font-size: 0.875rem;
+}
+
+@mixin arrow{
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+}
+
+.arrow-grey{
+	@include arrow;
+	border-bottom: 50px solid $grey;
+}
+
+.arrow-white{
+	@include arrow;
+	border-bottom: 50px solid $white;
+}
+
+/*
+*
+* MAIN BODY END
+*
+*/

@@ -1,0 +1,133 @@
+/*
+*
+* RESPONSIVE BEGIN
+*
+*/
+
+@media all and (max-width: 770px){
+	.nav{
+		display: none;
+	}
+	.nav.show{
+		display: block;
+	}
+	.burger{
+		display: block;
+	}
+	.main-nav{
+		margin: 18px 7px 12px;
+		ul{
+			padding-top: 5px;
+		}
+		li{
+			padding: 5px 0;
+		}
+		a{
+			&:hover{
+				padding-bottom: 2px;
+			}
+		}
+	}
+	.search-box{
+		margin-top: 21px;
+	}
+	.banner{
+	background-image: url("../images/daenerys-med.jpg");
+	height: 50vh;
+	}
+	.advantages{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.advantages-box{
+		width: 60%;
+		p{
+			margin-bottom: 15px;
+		}
+	}
+	.about-us{
+		.container{
+			flex-wrap: wrap;
+			justify-content: center;
+			.text-box{
+				max-width: 100%;
+				padding-bottom: 10px;
+			}
+			.gallery{
+				max-width: 80%;
+			}
+		}
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+	
+	h2{
+		font-size: 1.7rem;
+	}
+	.link-box {
+	  	width: 28%;
+	  	padding-top: 20px;
+	}
+	h2::before { 
+	  display: block; 
+	  content: " "; 
+	  margin-top: -100px; 
+	  height: 100px; 
+	}
+	.event-box{
+		width: 100%;
+	}
+	#map{
+		margin-right: 7px;
+	}
+	.question-box{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 500px){
+	h1{
+		font-size: 1.8rem;
+	}
+	h2{
+		font-size: 1.4rem;
+	}
+	p{
+		font-size: 0.875rem;
+	}
+	.link-box {
+	  	width: 80%;
+	  	img{
+	  		margin: 0 auto;
+	  		width: 60%;
+	  	}
+	}
+	.advantages-box{
+		width: 80%;
+	}
+	.event-box{
+		.event-description{
+			flex-wrap: wrap;
+			justify-content: center;
+			min-height: 250px;
+			.details{
+				width: 100%;
+				text-align: left;
+			}
+			#map{
+				margin: 15px 7px 0;
+				width: 100%;
+				min-height: 250px;
+			}
+		}
+	}
+	
+}
+
+
+/*
+*
+* RESPONSIVE BEGIN
+*
+*/

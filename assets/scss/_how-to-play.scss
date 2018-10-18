@@ -1,0 +1,41 @@
+/*
+*
+* HOW TO PLAY START
+*
+*/
+
+.how-to-play{
+	background-color: $white;
+	text-align: center;
+	.gallery{
+		justify-content: space-around;
+	}
+}
+
+.link-box{
+	width: 21%;
+	padding-top: 25px;
+	img{
+		border-radius: 100%;
+		&:hover{
+			opacity: 0.7;
+			border: 1px solid $lightblue1;
+		}
+	}
+	h4{
+		border-bottom: 1px solid $white;
+		&:hover{
+			color: $lightblue1;
+			border-bottom: 1px solid $lightblue1;
+		}
+	}
+	p{
+		margin: 0;
+	}	
+}
+
+/*
+*
+* HOW TO PLAY START
+*
+*/

@@ -1,0 +1,25 @@
+/*
+*
+* ABOUT US BEGIN
+*
+*/
+
+.about-us{
+	background-color: $grey;
+	.container{
+		justify-content: space-around;
+		.text-box{
+			max-width: 37%;
+		}
+		.gallery{
+			max-width: 60%;
+		}
+	}
+
+}
+
+/*
+*
+* ABOUT US END
+*
+*/

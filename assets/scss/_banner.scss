@@ -1,0 +1,39 @@
+/*
+*
+* BANNER START
+*
+*/
+
+.banner{
+	background-image: url("../images/daenerys.jpg");
+	background-size: cover;
+	background-position: center;
+	height: calc(100vh - 59px - 81px);
+	position: relative;
+	.container{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -20%);
+		padding: 0;
+		width: 100%;
+	}
+}
+
+h1{
+	font: 3.4rem $agot;
+	color: $white;
+	line-height: 1.3;
+	word-spacing: 10px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+/*
+*
+* BANNER END
+*
+*/

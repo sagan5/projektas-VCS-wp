@@ -1,0 +1,63 @@
+/*
+*
+* GET IN TOUCH BEGIN
+*
+*/
+
+.question{
+	background-color: $white;
+}
+
+.question-box{
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	border-radius: 10px;
+	.flex-container{
+		justify-content: space-around;
+		.credentials{
+			width: 48%;
+		}
+	}
+	::placeholder{
+		font-family: $ptsans;
+	}
+}
+
+input[type=text],
+input[type=email]{
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	border: 1px solid $lightblue1;
+	border-radius: 5px;
+}
+textarea{
+	width: 98%;
+	min-height: 150px;
+	resize: vertical;
+	border: 1px solid $lightblue1;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+
+
+input[type=submit] {
+	font: 1rem $agot;
+    background-color: $lightblue05;
+    color: $white;
+    padding: 15px 43px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+    	background-color: $lightblue1;
+	}
+}
+
+/*
+*
+* GET IN TOUCH END
+*
+*/

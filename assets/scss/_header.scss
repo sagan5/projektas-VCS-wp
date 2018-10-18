@@ -1,0 +1,33 @@
+/*
+*
+* HEADER START
+*
+*/
+
+.header{
+	background-color: $black;
+	.container{
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+}
+
+.logo{
+	padding: 7px;
+}
+
+.soc-nav{
+	padding-right: 7px;
+	a{
+		font-size: 1.375rem;
+		padding-left: 24px;
+		color: $lgrey;
+	}
+}
+
+/*
+*
+* HEADER END
+*
+*/

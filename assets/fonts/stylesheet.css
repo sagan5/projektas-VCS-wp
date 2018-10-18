@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Game of Thrones';
+    src: url('subset-GameofThrones.eot');
+    src: url('subset-GameofThrones.eot?#iefix') format('embedded-opentype'),
+        url('subset-GameofThrones.woff2') format('woff2'),
+        url('subset-GameofThrones.woff') format('woff'),
+        url('subset-GameofThrones.ttf') format('truetype'),
+        url('subset-GameofThrones.svg#GameofThrones') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
