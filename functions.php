@@ -175,5 +175,6 @@ function dump($data){
 
 add_image_size('logo', 113, 44, false);
 add_image_size('banner', 1920, 1200, false);
+add_image_size('advantage_thumb', 600, 398, true);
 
 ?>

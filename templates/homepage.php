@@ -11,6 +11,7 @@ get_header();
 <!-- partial files -->
 <?php
 get_template_part('partials/banner');
+get_template_part('partials/about_game');
 ?>
 
 <h6>Esame homepage.php</h6>

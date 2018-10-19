@@ -7,6 +7,7 @@
 	<?php wp_head(); ?> 
 </head>
 <body>
+
 	<!-- header begin -->
 
 	<div class="header">
@@ -43,7 +44,7 @@
 		<div class="container flex-container">
 			<nav class="main-nav">
 				<div class="burger">
-				<i class="fas fa-bars"></i>
+				<i class="fa fa-bars"></i>
 				</div>
 				<?php
 					$args = [
@@ -51,7 +52,6 @@
 						'container' => false,
 						'theme_location'=> 'primary-navigation'
 					];
-
 					wp_nav_menu($args);
 				?>		
 			</nav>
@@ -65,3 +65,4 @@
 	</div>
 
 	<!-- navigation end-->
+	

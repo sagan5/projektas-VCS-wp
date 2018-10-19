@@ -7,7 +7,7 @@
 	    	if($link['target']=="_blank"){
 	    		$target = ' target="_blank"';
 	    	}else{
-	    		$target = '';
+	    		$target = ' target="_blank"'; // if forgot to check
 	    	}
 	    	?>
 			<li>
