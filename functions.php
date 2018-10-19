@@ -177,5 +177,7 @@ add_image_size('logo', 113, 44, false);
 add_image_size('banner', 1920, 1200, false);
 add_image_size('advantage_thumb', 600, 398, false);
 add_image_size('gallery_image', 960, 720, true); // crop big images, centered
+add_image_size('link_box_image', 300, 300, true); // crop big images, centered
+
 
 ?>

@@ -9,7 +9,7 @@
 			<h2 id="about-us"><?php the_field('au_section_title'); ?></h2>
 			<p><?php echo nl2br(get_field('au_section_description')); ?></p>
 		</div>
-		<div class="owl-carousel gallery">
+		<div class="owl-carousel owl-theme gallery">
 			<?php 
 			if(have_rows('au_gallery')):
 				while(have_rows('au_gallery')):

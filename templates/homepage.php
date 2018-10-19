@@ -13,6 +13,7 @@ get_header();
 get_template_part('partials/banner');
 get_template_part('partials/about_game');
 get_template_part('partials/about_us');
+get_template_part('partials/how_to_play');
 ?>
 <!-- partial files end-->
 <h6>Esame homepage.php</h6>
