@@ -18,7 +18,7 @@ function theme_scripts(){
 
 		wp_register_script('jquery', ASSETS_URL . '/assets/scripts/jquery-3.3.1.js', false, false, true);
         wp_register_script('owlcarousel', ASSETS_URL . '/assets/scripts/owl.carousel.min.js', array('jquery'), false, true);
-        wp_register_script('gmaps', "https://maps.googleapis.com/maps/api/js?&callback=myMap", array('owlcarousel'), false, true);
+        wp_register_script('gmaps', "https://maps.googleapis.com/maps/api/js?key=AIzaSyAQa57UoSW9x-lELXQGCLn1R27tl_8dXYE&callback=myMap", array('owlcarousel'), false, true);
         wp_register_script('custom', ASSETS_URL . '/assets/scripts/custom.js', array('gmaps'), false, true);
 
         wp_enqueue_script('jquery');
@@ -173,11 +173,17 @@ function dump($data){
 	echo "</pre>";
 }
 
+function my_acf_init() {
+	
+	acf_update_setting('AIzaSyAQa57UoSW9x-lELXQGCLn1R27tl_8dXYE', 'xxx');
+}
+
+add_action('acf/init', 'my_acf_init');
+
 add_image_size('logo', 113, 44, false);
 add_image_size('banner', 1920, 1200, false);
 add_image_size('advantage_thumb', 600, 398, false);
 add_image_size('gallery_image', 960, 720, true); // crop big images, centered
 add_image_size('link_box_image', 300, 300, true); // crop big images, centered
-
-
+add_image_size('event_image', 960, 540, false);
 ?>

@@ -7,8 +7,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /*
 *
@@ -25,35 +24,28 @@
   src: url("../fonts/subset-GameofThrones.eot");
   src: url("../fonts/subset-GameofThrones.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-GameofThrones.woff2") format("woff2"), url("../fonts/subset-GameofThrones.woff") format("woff"), url("../fonts/subset-GameofThrones.ttf") format("truetype"), url("../fonts/subset-GameofThrones.svg#GameofThrones") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 html {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 section {
-  position: relative;
-}
+  position: relative; }
 
 ul,
 body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 nav > ul {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
   width: 100%;
-  display: block;
-}
+  display: block; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 h2 {
   letter-spacing: 1px;
@@ -63,8 +55,7 @@ h2 {
   word-spacing: 3px;
   color: #818181;
   font: 2rem "Game of Thrones", sans-serif;
-  margin: 0 7px 18px;
-}
+  margin: 0 7px 18px; }
 
 h3 {
   letter-spacing: 1px;
@@ -74,67 +65,56 @@ h3 {
   word-spacing: 3px;
   color: #818181;
   font: 1.3rem "Game of Thrones", sans-serif;
-  margin: 20px 0;
-}
+  margin: 20px 0; }
 
 h4 {
   font: 1rem "Game of Thrones", sans-serif;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  color: #818181;
-}
+  color: #818181; }
 
 h5 {
   font: 0.8rem "Game of Thrones", sans-serif;
   margin: 10px 7px;
-  color: #818181;
-}
+  color: #818181; }
 
 p {
   margin: 0 7px;
   font: 1rem "PT Sans", sans-serif;
   font-weight: 400;
   line-height: 1.2857;
-  color: #818181;
-}
+  color: #818181; }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
   padding-bottom: 70px;
-  padding-top: 45px;
-}
+  padding-top: 45px; }
 
 .wrap {
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-}
+  display: flex; }
 
 ::-webkit-input-placeholder {
   color: #818181;
-  font-size: 0.875rem;
-}
+  font-size: 0.875rem; }
 
 :-ms-input-placeholder {
   color: #818181;
-  font-size: 0.875rem;
-}
+  font-size: 0.875rem; }
 
 ::-ms-input-placeholder {
   color: #818181;
-  font-size: 0.875rem;
-}
+  font-size: 0.875rem; }
 
 ::placeholder {
   color: #818181;
-  font-size: 0.875rem;
-}
+  font-size: 0.875rem; }
 
 .arrow-grey {
   width: 0;
@@ -148,8 +128,7 @@ p {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  border-bottom: 50px solid #eeeeee;
-}
+  border-bottom: 50px solid #eeeeee; }
 
 .arrow-white {
   width: 0;
@@ -163,8 +142,7 @@ p {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  border-bottom: 50px solid #ffffff;
-}
+  border-bottom: 50px solid #ffffff; }
 
 /*
 *
@@ -177,32 +155,25 @@ p {
 *
 */
 .header {
-  background-color: #252323;
-}
-
-.header .container {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-}
+  background-color: #252323; }
+  .header .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0; }
 
 .logo {
-  padding: 7px;
-}
+  padding: 7px; }
 
 .soc-nav {
-  padding-right: 7px;
-}
-
-.soc-nav a {
-  font-size: 1.375rem;
-  padding-left: 24px;
-  color: #efefef;
-}
+  padding-right: 7px; }
+  .soc-nav a {
+    font-size: 1.375rem;
+    padding-left: 24px;
+    color: #efefef; }
 
 /*
 *
@@ -220,110 +191,83 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
-}
-
-.navigation .container {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0;
-}
+  z-index: 2; }
+  .navigation .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0; }
 
 .main-nav {
-  margin: 37px 7px 25px;
-}
-
-.main-nav a {
-  font: 0.875rem "Game of Thrones", sans-serif;
-  text-transform: uppercase;
-  color: #818181;
-  margin-right: 24px;
-  padding-bottom: 24px;
-  letter-spacing: 0.8px;
-}
-
-.main-nav a:hover {
-  color: #00bac6;
-  padding-bottom: 26px;
-  border-bottom: 3px solid #00bac6;
-}
+  margin: 37px 7px 25px; }
+  .main-nav a {
+    font: 0.875rem "Game of Thrones", sans-serif;
+    text-transform: uppercase;
+    color: #818181;
+    margin-right: 24px;
+    padding-bottom: 24px;
+    letter-spacing: 0.8px; }
+    .main-nav a:hover {
+      color: #00bac6;
+      padding-bottom: 26px;
+      border-bottom: 3px solid #00bac6; }
 
 .search-box {
   margin-top: 33px;
-  padding-right: 7px;
-}
-
-.search-box input[type=text] {
-  border: none;
-  margin: 0;
-  font-size: 0.875rem;
-  max-width: 120px;
-  padding: 0;
-}
-
-.search-box button {
-  background-color: #ffffff;
-  border: none;
-  font-size: 1.375rem;
-  color: #818181;
-  cursor: pointer;
-  padding: 0;
-}
-
-.search-box ::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font: 0.875rem "Game of Thrones", sans-serif;
-  letter-spacing: 0.8px;
-}
-
-.search-box :-ms-input-placeholder {
-  text-transform: uppercase;
-  font: 0.875rem "Game of Thrones", sans-serif;
-  letter-spacing: 0.8px;
-}
-
-.search-box ::-ms-input-placeholder {
-  text-transform: uppercase;
-  font: 0.875rem "Game of Thrones", sans-serif;
-  letter-spacing: 0.8px;
-}
-
-.search-box ::placeholder {
-  text-transform: uppercase;
-  font: 0.875rem "Game of Thrones", sans-serif;
-  letter-spacing: 0.8px;
-}
+  padding-right: 7px; }
+  .search-box input[type=text] {
+    border: none;
+    margin: 0;
+    font-size: 0.875rem;
+    max-width: 120px;
+    padding: 0; }
+  .search-box button {
+    background-color: #ffffff;
+    border: none;
+    font-size: 1.375rem;
+    color: #818181;
+    cursor: pointer;
+    padding: 0; }
+  .search-box ::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font: 0.875rem "Game of Thrones", sans-serif;
+    letter-spacing: 0.8px; }
+  .search-box :-ms-input-placeholder {
+    text-transform: uppercase;
+    font: 0.875rem "Game of Thrones", sans-serif;
+    letter-spacing: 0.8px; }
+  .search-box ::-ms-input-placeholder {
+    text-transform: uppercase;
+    font: 0.875rem "Game of Thrones", sans-serif;
+    letter-spacing: 0.8px; }
+  .search-box ::placeholder {
+    text-transform: uppercase;
+    font: 0.875rem "Game of Thrones", sans-serif;
+    letter-spacing: 0.8px; }
 
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .burger {
-  display: none;
-}
+  display: none; }
 
 .fa-bars {
   font-size: 1.5rem;
   color: #818181;
   cursor: pointer;
-  display: inline;
-}
-
-.fa-bars:hover {
-  color: #00bac6;
-}
+  display: inline; }
+  .fa-bars:hover {
+    color: #00bac6; }
 
 h2::before {
   display: block;
   content: " ";
   margin-top: -130px;
-  height: 130px;
-}
+  height: 130px; }
 
 /*
 *
@@ -339,19 +283,16 @@ h2::before {
   background-size: cover;
   background-position: center;
   height: calc(100vh - 59px - 81px);
-  position: relative;
-}
-
-.banner .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-  -ms-transform: translate(-50%, -20%);
-  transform: translate(-50%, -20%);
-  padding: 0;
-  width: 100%;
-}
+  position: relative; }
+  .banner .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%);
+    padding: 0;
+    width: 100%; }
 
 h1 {
   font: 3.4rem "Game of Thrones", sans-serif;
@@ -362,8 +303,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 /*
 *
@@ -376,27 +316,21 @@ h1 {
 *
 */
 .about-game {
-  background-color: #ffffff;
-}
+  background-color: #ffffff; }
 
 .description {
-  text-align: center;
-}
-
-.description p {
-  margin-bottom: 20px;
-}
+  text-align: center; }
+  .description p {
+    margin-bottom: 20px; }
 
 .advantages {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .advantages-box {
   text-align: center;
   width: 32%;
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 /*
 *
@@ -409,21 +343,14 @@ h1 {
 *
 */
 .about-us {
-  background-color: #eeeeee;
-}
-
-.about-us .container {
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-.about-us .container .text-box {
-  max-width: 37%;
-}
-
-.about-us .container .gallery {
-  max-width: 60%;
-}
+  background-color: #eeeeee; }
+  .about-us .container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .about-us .container .text-box {
+      max-width: 37%; }
+    .about-us .container .gallery {
+      max-width: 60%; }
 
 /*
 *
@@ -437,40 +364,26 @@ h1 {
 */
 .how-to-play {
   background-color: #ffffff;
-  text-align: center;
-}
-
-.how-to-play .gallery {
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
+  text-align: center; }
+  .how-to-play .gallery {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
 
 .link-box {
   width: 21%;
-  padding-top: 25px;
-}
-
-.link-box img {
-  border-radius: 100%;
-}
-
-.link-box img:hover {
-  opacity: 0.7;
-  border: 1px solid #00bac6;
-}
-
-.link-box h4 {
-  border-bottom: 1px solid #ffffff;
-}
-
-.link-box h4:hover {
-  color: #00bac6;
-  border-bottom: 1px solid #00bac6;
-}
-
-.link-box p {
-  margin: 0;
-}
+  padding-top: 25px; }
+  .link-box img {
+    border-radius: 100%; }
+    .link-box img:hover {
+      opacity: 0.7;
+      border: 1px solid #00bac6; }
+  .link-box h4 {
+    border-bottom: 1px solid #ffffff; }
+    .link-box h4:hover {
+      color: #00bac6;
+      border-bottom: 1px solid #00bac6; }
+  .link-box p {
+    margin: 0; }
 
 /*
 *
@@ -483,38 +396,31 @@ h1 {
 *
 */
 .events {
-  background-color: #eeeeee;
-}
+  background-color: #eeeeee; }
 
 .event-box {
   margin: 0 auto;
   text-align: center;
-  width: 80%;
-}
+  width: 80%; }
+  .event-box > p {
+    margin: 27px 7px; }
+  .event-box .event-description {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 250px; }
+    .event-box .event-description .details {
+      width: 42%;
+      text-align: left; }
+      .event-box .event-description .details p {
+        border-bottom: 1px solid rgba(0, 186, 198, 0.5); }
+    .event-box .event-description #map {
+      width: 57%; }
 
-.event-box > p {
-  margin: 27px 7px;
-}
-
-.event-box .event-description {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 250px;
-}
-
-.event-box .event-description .details {
-  width: 42%;
-  text-align: left;
-}
-
-.event-box .event-description .details p {
-  border-bottom: 1px solid rgba(0, 186, 198, 0.5);
-}
-
-.event-box .event-description #map {
-  width: 57%;
-}
+.acf-map {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 186, 198, 0.5); }
 
 /*
 *
@@ -527,40 +433,26 @@ h1 {
 *
 */
 .question {
-  background-color: #ffffff;
-}
+  background-color: #ffffff; }
 
 .question-box {
   margin: 0 auto;
   text-align: center;
   width: 80%;
-  border-radius: 10px;
-}
-
-.question-box .flex-container {
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-.question-box .flex-container .credentials {
-  width: 48%;
-}
-
-.question-box ::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
-}
-
-.question-box :-ms-input-placeholder {
-  font-family: "PT Sans", sans-serif;
-}
-
-.question-box ::-ms-input-placeholder {
-  font-family: "PT Sans", sans-serif;
-}
-
-.question-box ::placeholder {
-  font-family: "PT Sans", sans-serif;
-}
+  border-radius: 10px; }
+  .question-box .flex-container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .question-box .flex-container .credentials {
+      width: 48%; }
+  .question-box ::-webkit-input-placeholder {
+    font-family: "PT Sans", sans-serif; }
+  .question-box :-ms-input-placeholder {
+    font-family: "PT Sans", sans-serif; }
+  .question-box ::-ms-input-placeholder {
+    font-family: "PT Sans", sans-serif; }
+  .question-box ::placeholder {
+    font-family: "PT Sans", sans-serif; }
 
 input[type=text],
 input[type=email] {
@@ -568,8 +460,7 @@ input[type=email] {
   padding: 10px 15px;
   margin-bottom: 10px;
   border: 1px solid #00bac6;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 textarea {
   width: 98%;
@@ -578,8 +469,7 @@ textarea {
   border: 1px solid #00bac6;
   border-radius: 5px;
   padding: 10px 15px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 input[type=submit] {
   font: 1rem "Game of Thrones", sans-serif;
@@ -588,12 +478,9 @@ input[type=submit] {
   padding: 15px 43px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #00bac6;
-}
+  cursor: pointer; }
+  input[type=submit]:hover {
+    background-color: #00bac6; }
 
 /*
 *
@@ -606,22 +493,18 @@ input[type=submit]:hover {
 *
 */
 .footer {
-  background-color: #252323;
-}
-
-.footer .container {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-}
+  background-color: #252323; }
+  .footer .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0; }
 
 .footer-text {
-  margin: 15px 0;
-}
+  margin: 15px 0; }
 
 /*
 *
@@ -635,125 +518,92 @@ input[type=submit]:hover {
 */
 @media all and (max-width: 770px) {
   .nav {
-    display: none;
-  }
+    display: none; }
   .nav.show {
-    display: block;
-  }
+    display: block; }
   .burger {
-    display: block;
-  }
+    display: block; }
   .main-nav {
-    margin: 18px 7px 12px;
-  }
-  .main-nav ul {
-    padding-top: 5px;
-  }
-  .main-nav li {
-    padding: 5px 0;
-  }
-  .main-nav a:hover {
-    padding-bottom: 2px;
-  }
+    margin: 18px 7px 12px; }
+    .main-nav ul {
+      padding-top: 5px; }
+    .main-nav li {
+      padding: 5px 0; }
+    .main-nav a:hover {
+      padding-bottom: 2px; }
   .search-box {
-    margin-top: 21px;
-  }
+    margin-top: 21px; }
   .banner {
     background-image: url("../images/daenerys-med.jpg");
-    height: 50vh;
-  }
+    height: 50vh; }
   .advantages {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
+    flex-wrap: wrap; }
   .advantages-box {
-    width: 60%;
-  }
-  .advantages-box p {
-    margin-bottom: 15px;
-  }
+    width: 60%; }
+    .advantages-box p {
+      margin-bottom: 15px; }
   .about-us .container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .about-us .container .text-box {
-    max-width: 100%;
-    padding-bottom: 10px;
-  }
-  .about-us .container .gallery {
-    max-width: 80%;
-  }
+    justify-content: center; }
+    .about-us .container .text-box {
+      max-width: 100%;
+      padding-bottom: 10px; }
+    .about-us .container .gallery {
+      max-width: 80%; }
   h1 {
-    font-size: 2.5rem;
-  }
+    font-size: 2.5rem; }
   h2 {
-    font-size: 1.7rem;
-  }
+    font-size: 1.7rem; }
   .link-box {
     width: 28%;
-    padding-top: 20px;
-  }
+    padding-top: 20px; }
   h2::before {
     display: block;
     content: " ";
     margin-top: -100px;
-    height: 100px;
-  }
+    height: 100px; }
   .event-box {
-    width: 100%;
-  }
+    width: 100%; }
   #map {
-    margin-right: 7px;
-  }
+    margin-right: 7px; }
   .question-box {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 @media all and (max-width: 500px) {
   h1 {
-    font-size: 1.8rem;
-  }
+    font-size: 1.8rem; }
   h2 {
-    font-size: 1.4rem;
-  }
+    font-size: 1.4rem; }
   p {
-    font-size: 0.875rem;
-  }
+    font-size: 0.875rem; }
   .link-box {
-    width: 80%;
-  }
-  .link-box img {
-    margin: 0 auto;
-    width: 60%;
-  }
+    width: 80%; }
+    .link-box img {
+      margin: 0 auto;
+      width: 60%; }
   .advantages-box {
-    width: 80%;
-  }
+    width: 80%; }
   .event-box .event-description {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    min-height: 250px;
-  }
-  .event-box .event-description .details {
-    width: 100%;
-    text-align: left;
-  }
-  .event-box .event-description #map {
-    margin: 15px 7px 0;
-    width: 100%;
-    min-height: 250px;
-  }
-}
+    min-height: 250px; }
+    .event-box .event-description .details {
+      width: 100%;
+      text-align: left; }
+    .event-box .event-description #map {
+      margin: 15px 7px 0;
+      width: 100%;
+      min-height: 250px; } }
 
 /*
 *
