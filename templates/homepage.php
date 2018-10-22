@@ -15,6 +15,7 @@ get_template_part('partials/about_game');
 get_template_part('partials/about_us');
 get_template_part('partials/how_to_play');
 get_template_part('partials/events');
+get_template_part('partials/get_in_touch');
 ?>
 <!-- partial files end-->
 <h6>Esame homepage.php</h6>
