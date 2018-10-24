@@ -18,6 +18,5 @@ get_template_part('partials/events');
 get_template_part('partials/get_in_touch');
 ?>
 <!-- partial files end-->
-<h6>Esame homepage.php</h6>
 
 <?php get_footer(); ?>
