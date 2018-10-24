@@ -280,22 +280,30 @@ h2::before {
 *
 */
 .banner {
-  background-size: cover;
-  background-position: center;
-  height: calc(100vh - 59px - 81px);
   position: relative; }
   .banner .container {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -20%);
-    -ms-transform: translate(-50%, -20%);
-    transform: translate(-50%, -20%);
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .banner .container .title {
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0 auto; }
 
 h1 {
-  font: 3.4rem "Game of Thrones", sans-serif;
+  font: 3.1rem "Game of Thrones", sans-serif;
   color: #ffffff;
   line-height: 1.3;
   word-spacing: 10px;
@@ -304,6 +312,18 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 400; }
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 5rem;
+  color: #efefef;
+  padding: 20px 10px; }
+  .fa-angle-left:hover,
+  .fa-angle-right:hover {
+    color: #ffffff; }
+
+.slick-dots {
+  bottom: 5px; }
 
 /*
 *
@@ -324,8 +344,9 @@ h1 {
     margin-bottom: 20px; }
 
 .advantages {
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .advantages-box {
   text-align: center;
@@ -416,11 +437,6 @@ h1 {
         border-bottom: 1px solid rgba(0, 186, 198, 0.5); }
     .event-box .event-description #map {
       width: 57%; }
-
-.acf-map {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 186, 198, 0.5); }
 
 /*
 *
@@ -533,9 +549,13 @@ input[type=submit] {
       padding-bottom: 2px; }
   .search-box {
     margin-top: 21px; }
-  .banner {
-    background-image: url("../images/daenerys-med.jpg");
-    height: 50vh; }
+  .banner .container {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 3.5rem; }
   .advantages {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -558,7 +578,7 @@ input[type=submit] {
     .about-us .container .gallery {
       max-width: 80%; }
   h1 {
-    font-size: 2.5rem; }
+    font-size: 2.2rem; }
   h2 {
     font-size: 1.7rem; }
   .link-box {
@@ -578,11 +598,19 @@ input[type=submit] {
 
 @media all and (max-width: 500px) {
   h1 {
-    font-size: 1.8rem; }
-  h2 {
     font-size: 1.4rem; }
+  h2 {
+    font-size: 1.1rem; }
   p {
     font-size: 0.875rem; }
+  .banner .container {
+    top: 0%;
+    -webkit-transform: translate(-50%, 10%);
+    -ms-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%); }
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 2rem; }
   .link-box {
     width: 80%; }
     .link-box img {

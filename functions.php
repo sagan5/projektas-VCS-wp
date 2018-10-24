@@ -18,11 +18,14 @@ function theme_scripts(){
 
 		wp_register_script('jquery', ASSETS_URL . '/assets/scripts/jquery-3.3.1.js', false, false, true);
         wp_register_script('owlcarousel', ASSETS_URL . '/assets/scripts/owl.carousel.min.js', array('jquery'), false, true);
-        wp_register_script('gmaps', "https://maps.googleapis.com/maps/api/js?key=AIzaSyAQa57UoSW9x-lELXQGCLn1R27tl_8dXYE&callback=myMap", array('owlcarousel'), false, true);
+        wp_register_script('slickcarousel', ASSETS_URL . '/assets/scripts/slick.min.js', array('owlcarousel'), false, true);
+
+        wp_register_script('gmaps', "https://maps.googleapis.com/maps/api/js?key=AIzaSyAQa57UoSW9x-lELXQGCLn1R27tl_8dXYE&callback=myMap", array('slickcarousel'), false, true);
         wp_register_script('custom', ASSETS_URL . '/assets/scripts/custom.js', array('gmaps'), false, true);
 
         wp_enqueue_script('jquery');
         wp_enqueue_script('owlcarousel');
+        wp_enqueue_script('slickcarousel');
         wp_enqueue_script('gmaps');
         wp_enqueue_script('custom');
     }
@@ -40,7 +43,9 @@ function theme_stylesheets(){
 		wp_register_style('fontawesome', ASSETS_URL . '/assets/css/font-awesome.min.css', array('gfonts'), false, 'all');
 		wp_register_style('owlcarousel', ASSETS_URL . '/assets/css/owl.carousel.min.css', array('fontawesome'), false, 'all');
 		wp_register_style('owltheme', ASSETS_URL . '/assets/css/owl.theme.default.min.css', array('owlcarousel'), false, 'all');
-		wp_register_style('style', ASSETS_URL . '/assets/css/style.css', array('owltheme'), false, 'all');
+		wp_register_style('slickcarousel', ASSETS_URL . '/assets/css/slick.css', array('owltheme'), false, 'all');
+		wp_register_style('slicktheme', ASSETS_URL . '/assets/css/slick-theme.css', array('slickcarousel'), false, 'all');
+		wp_register_style('style', ASSETS_URL . '/assets/css/style.css', array('slicktheme'), false, 'all');
 
 		
 
@@ -49,6 +54,8 @@ function theme_stylesheets(){
 		wp_enqueue_style('fontawesome');
 		wp_enqueue_style('owlcarousel');
 		wp_enqueue_style('owltheme');
+		wp_enqueue_style('slickcarousel');
+		wp_enqueue_style('slicktheme');
 		wp_enqueue_style('style');
 	}
 }
@@ -181,7 +188,7 @@ function my_acf_init() {
 add_action('acf/init', 'my_acf_init');
 
 add_image_size('logo', 113, 44, false);
-add_image_size('banner', 1920, 1200, false);
+add_image_size('banner', 1920, 820, true); // crop big images, centered
 add_image_size('advantage_thumb', 600, 398, false);
 add_image_size('gallery_image', 960, 720, true); // crop big images, centered
 add_image_size('link_box_image', 300, 300, true); // crop big images, centered
